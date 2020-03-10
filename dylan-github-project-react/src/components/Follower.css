@@ -5,11 +5,13 @@
     padding: 1rem;
     margin:4rem;
 }
+
 .photo2{
     width:20vw;
     padding:1rem;
     border-radius:2rem;
 }
+
 .info-under-photo2{
     padding:.5rem;
 }
@@ -19,35 +21,39 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .anchor{
     text-decoration: none;
     text-shadow: -1px -1px 0 #000, 1px 1px 0 #000, 0 -1px 0 #000,
-      0 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 0 0 #000,
-      -1px 0 0 #000;
-      color:gold;
-      font-size: 1.5rem;
-      letter-spacing: 2px;
+    0 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 0 0 #000,
+    -1px 0 0 #000;
+    color:gold;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
 }
+
 .anchor:hover{
     color:white;
 }
+
 .title-3{
     text-shadow: -1px -1px 0 #000, 1px 1px 0 #000, 0 -1px 0 #000,
-      0 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 0 0 #000,
-      -1px 0 0 #000;
-      color:gold;
-      letter-spacing: 2px;
-      font-size: 2rem;
-  }
-  .followers-profile-button{
+    0 1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 0 0 #000,
+    -1px 0 0 #000;
+    color:gold;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+
+.followers-profile-button{
     margin:1rem;
     padding:.8rem 1.5rem;
     border: black solid 1px;
     border-radius: 10px;
-  }
+}
 
-  .followers-profile-button:hover{
-      background-color: gold;
-      transform: scale(1.2);
-      transition: .5s;
-  }
+.followers-profile-button:hover{
+    background-color: gold;
+    transform: scale(1.2);
+    transition: .5s;
+}

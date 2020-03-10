@@ -4,9 +4,7 @@ import axios from 'axios'
 import MyUserCard from './components/MyUserCard';
 import FollowersCard from './components/FollowersCard';
 
-
 import './App.css';
-
 
 class App extends React.Component {
   constructor(){

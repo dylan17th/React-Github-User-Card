@@ -1,9 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import Followers from './followers';
+
 import './Follower.css';
-
-
 
 class FollowersCard extends React.Component{
     constructor (){
@@ -12,14 +11,15 @@ class FollowersCard extends React.Component{
             followers: []
         }
     }
+
     componentDidMount(){
         axios.get('https://api.github.com/users/dylan17th/followers')
         .then(res => this.setState({
             followers: res.data
         }))
         .catch(err => console.log(err))
-
     }
+    
     render(){
         return (
             <div className='follower-cards-container'>
