@@ -1,7 +1,9 @@
 import React from 'react';
 import axios from 'axios'
 
-import MyUserCard from './components/MyUserCard'
+import MyUserCard from './components/MyUserCard';
+import FollowersCard from './components/FollowersCard';
+
 
 import './App.css';
 
@@ -10,25 +12,26 @@ class App extends React.Component {
   constructor(){
     super();
     this.state ={
-      myUser: {},
-      follower: []
-    }
+      myUser: {}
   }
-  componentDidMount (){
+}
+
+  componentDidMount() {
     axios.get('https://api.github.com/users/dylan17th')
       .then(res => this.setState({
         myUser: res.data
       })
       )
       .catch(err => console.log(err.message))
-
   }
+
   render(){
   return (
     <div className="App">
-      <h1>GitHub Username Project in React</h1>
+      <h1>GitHub Username React</h1>
       <MyUserCard myUserCard={this.state.myUser}/>
-
+      <h2>Followers</h2>
+      <FollowersCard />
     </div>
   );
 }
