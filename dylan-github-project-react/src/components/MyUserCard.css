@@ -1,0 +1,14 @@
+.container-myUser{
+    box-shadow: 10px 10px 10px 10px lightgrey;
+    border-radius: 2rem;
+    width:30vw;
+    padding: 1rem;
+}
+.photo{
+    width:20vw;
+    padding:1rem;
+    border-radius:2rem;
+}
+.info-under-photo{
+    padding:.5rem;
+}
