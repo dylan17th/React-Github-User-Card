@@ -1,18 +1,14 @@
 import React from 'react';
+import './Follower.css'
 
 
-
-const FollowersCard = props => {
+const FollowersCard = ({user}) => {
+    console.log(user)
     return(
-        <div className='container-myUser'>
-            <h3>{}</h3>
-            <div>{}</div>
-            <img className='photo'src={`${}`} alt='id'/>
-            <div className='info-under-photo'>UserName: {}</div>
-            <div className='info-under-photo'>{}</div>
-            <div className='info-under-photo'>Repositories: {}</div>
-            <div className='info-under-photo'>Followers:{}</div>
-            <div className='info-under-photo'>Following:{}</div>
+        <div className='container-FollowersUser'>
+            <div className='info-under-photo2 title-3'>UserName: {user.login}</div>
+            <img className='photo2'src={`${user.avatar_url}`} alt='id'/>  
+            <button className='followers-profile-button'><a className="anchor" href={`${user.html_url}`}> View GitHub profile</a></button>          
         </div>
     )
 }
